@@ -16,6 +16,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
         
     </head>
     <body>
@@ -25,6 +26,12 @@
                 <a href="#how">How it works</a><a href="#services">Services</a><a href="#about">About</a>
             </nav>
             <div class="header-actions">
+                <a href="https://www.instagram.com/leadwithsteve" target="_blank" aria-label="Visit our profile">
+                    <i class="fa-brands fa-instagram"></i> <!-- Your icon element goes here -->
+                </a>
+                <a href="https://www.linkedin.com/in/steveen-vargas/" target="_blank" aria-label="Visit our profile">
+                    <i class="fa-brands fa-linkedin"></i> <!-- Your icon element goes here -->
+                </a>
                 <button class="language-switch" id="languageSwitch" aria-label="Switch language">
                     ES <span>/</span> EN</button
                 ><a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
@@ -89,7 +96,7 @@
                 ><span data-en="One move at a time." data-es="Una mudanza a la vez.">One move at a time.</span>
             </section>
 
-            <section class="section intro" id="about">
+            <section class="section intro" id="introduction">
                 <div class="section-number">01</div>
                 <div>
                     <p class="eyebrow" data-en="A BETTER WAY TO BEGIN" data-es="UNA MEJOR FORMA DE COMENZAR">
@@ -203,6 +210,31 @@
                                 Leave with practical next steps and a little more peace of mind.
                             </p>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-me" id="about" aria-labelledby="about-heading">
+                <div class="about-inner">
+                    <div class="about-photo">
+                        <!-- Replace the placeholder contents below with your photo:
+                             <img src="/images/about-me.jpg" alt="" width="720" height="900" loading="lazy" />
+                             The adjacent story introduces you, so an empty alt avoids repeating it.
+                             Keep the surrounding .about-photo element for rounded corners and cropping. -->
+                        <img src="/images/about-me.jpg" alt="" width="720" height="900" loading="lazy" />
+                        <p class="about-photo-label" data-en="Your photo here" data-es="Tu foto aquí">Your photo here</p>
+                    </div>
+                    <div class="about-story">
+                        <p class="eyebrow" data-en="The person behind Move Easy" data-es="La persona detrás de Move Easy">The person behind Move Easy</p>
+                        <h2 id="about-heading" data-en="A new city. A fresh start. Someone in your corner." data-es="Una nueva ciudad. Un nuevo comienzo. Alguien que te acompaña.">A new city. A fresh start. Someone in your corner.</h2>
+                        <div class="about-body">
+                            <p data-en="I’m originally from Ecuador, and I’ve called four different countries home. Each move started with a desire to experience more, embrace new opportunities, and live life without wondering, ‘What if?’" data-es="Soy de Ecuador y he llamado hogar a cuatro países diferentes. Cada mudanza nació del deseo de vivir nuevas experiencias, aprovechar nuevas oportunidades y disfrutar la vida sin quedarme con la duda de «¿qué habría pasado si…?»">I’m originally from Ecuador, and I’ve called four different countries home. Each move started with a desire to experience more, embrace new opportunities, and live life without wondering, ‘What if?’</p>
+                            <p data-en="Along the way, I’ve learned that moving somewhere new takes more than packing your bags. Choosing a neighborhood, finding the right phone plan, and understanding how everyday life works can make a big difference in how quickly you feel settled. I’ve made mistakes, learned from them, and know how valuable a little guidance can be." data-es="En el camino, he aprendido que mudarse a un lugar nuevo implica mucho más que hacer las maletas. Elegir un barrio, encontrar el plan de celular adecuado y entender cómo funciona la vida cotidiana puede marcar una gran diferencia a la hora de adaptarte. He cometido errores, he aprendido de ellos y sé lo valioso que puede ser contar con un poco de orientación.">Along the way, I’ve learned that moving somewhere new takes more than packing your bags. Choosing a neighborhood, finding the right phone plan, and understanding how everyday life works can make a big difference in how quickly you feel settled. I’ve made mistakes, learned from them, and know how valuable a little guidance can be.</p>
+                            <p data-en="I created Move Easy to help students and young professionals navigate those decisions with greater confidence. I combine firsthand experience with careful research to help you understand your options, avoid common pitfalls, and make choices that fit your priorities." data-es="Creé Move Easy para ayudar a estudiantes y jóvenes profesionales a tomar esas decisiones con más confianza. Combino mi experiencia personal con una investigación cuidadosa para ayudarte a entender tus opciones, evitar errores comunes y tomar decisiones que se ajusten a tus prioridades.">I created Move Easy to help students and young professionals navigate those decisions with greater confidence. I combine firsthand experience with careful research to help you understand your options, avoid common pitfalls, and make choices that fit your priorities.</p>
+                            <p data-en="My goal is simple: to help you feel at home, so you can spend less time figuring everything out and more time enjoying the life you came to build." data-es="Mi objetivo es sencillo: ayudarte a sentirte en casa, para que pases menos tiempo tratando de resolverlo todo y más tiempo disfrutando de la vida que viniste a construir.">My goal is simple: to help you feel at home, so you can spend less time figuring everything out and more time enjoying the life you came to build.</p>
+                        </div>
+                        <a class="button button-dark about-cta" href="#contact" data-en="Let’s Talk About Your Move" data-es="Hablemos de tu mudanza">Let’s Talk About Your Move</a>
+                        <p class="about-note" data-en="Tell me where you’re headed and what’s on your mind." data-es="Cuéntame a dónde te mudas y qué inquietudes tienes.">Tell me where you’re headed and what’s on your mind.</p>
                     </div>
                 </div>
             </section>
@@ -334,6 +366,6 @@
             </p>
             <span>© 2026 Move Easy</span>
         </footer>
-        <script type="module" src="/app.js"></script>
+        <script type="module" src="./app.js"></script>
     </body>
 </html>
